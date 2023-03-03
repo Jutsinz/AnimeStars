@@ -26,6 +26,8 @@ local Window = Rayfield:CreateWindow({
 
  local Tab = Window:CreateTab("I'm OP NOW")
 
+game:GetService("Players").LocalPlayer.PlayerGui.Interface.Guis.Message:Destroy()
+
 local Toggle = Tab:CreateToggle({
    Name = "Auto Tap",
    CurrentValue = false,
@@ -63,7 +65,6 @@ local Toggle = Tab:CreateToggle({
      if autoSuper then
          pcall(function ()
              while autoSuper do
-                game:GetService("Players").LocalPlayer.PlayerGui.Interface.Guis.Message:Destroy()
                  local args = {
                      [1] = {
                          [1] = {
@@ -90,7 +91,6 @@ local Toggle = Tab:CreateToggle({
      if autoUltra then
          pcall(function ()
              while autoUltra do
-                game:GetService("Players").LocalPlayer.PlayerGui.Interface.Guis.Message:Destroy()
                  local args = {
                      [1] = {
                          [1] = {
