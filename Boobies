@@ -75,7 +75,7 @@ local Toggle = Tab:CreateToggle({
                  }
  
                  game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-                 wait()
+                 wait(3)
              end
          end)
      end
@@ -101,7 +101,7 @@ local Toggle = Tab:CreateToggle({
                  }
  
                  game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-                 wait()
+                 wait(3)
                  
              end
          end)
@@ -155,7 +155,7 @@ task.spawn(function()
             }
             
             game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-            wait()
+            wait(1)
         end
     end
 end)
@@ -268,7 +268,7 @@ local Toggle = Tab:CreateToggle({
                 local button = game:GetService'VirtualInputManager'
                 while chiChi do
                 button:SendKeyEvent(true, "E", false, game)
-                wait()
+                wait(1)
                 end
                 
             end)
