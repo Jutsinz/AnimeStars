@@ -243,7 +243,7 @@ local Toggle = Tab:CreateToggle({
              }
              
              game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
-             wait()    
+             wait(1)    
          end
      end)
  end
